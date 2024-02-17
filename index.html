@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Heart</title>
+</head>
+<body>
+  <style>
+    body{
+    background-color: black;
+  }
+  </style>
+  <div class="chuyendong"><style>
+    .chuyendong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    animation: heartAnimation 1.8s infinite;
+  }
+  @keyframes heartAnimation {
+    0% {
+        transform: scale(1);
+        background-color:rgb(0, 0, 0) ;
+    }
+    50% {
+        transform: scale(1.15);
+        background-color:rgb(18, 18, 18) ;
+    }
+    100% {
+        transform: scale(1);
+        background-color:rgb(0, 0, 0) ;
+    }
+  }
+  </style>
+    <div class="heart"><style>
+    .heart {
+      width: 320px;
+      height: 320px;
+      position:relative;
+      background-color: rgb(243, 18, 72);
+      transform: rotate(-45deg);
+      margin: 200px;
+      border-radius:2px;
+      position: absolute;
+      top: 40px;
+      filter: blur(15px);
+    }
+    
+    .heart::before,
+    .heart::after {
+      content: "";
+      width: 320px;
+      height: 320px;
+      background-color: rgb(243, 18, 72);
+      border-radius: 50%;
+      position: absolute;
+    }
+    
+    .heart::before {
+      top: -160px;
+      left: 0;
+    }
+    
+    .heart::after {
+      top: 0;
+      left: 160px;
+    }
+    </style></div>
+    <div class="inheart"><style>
+    .inheart {
+      width: 160px;
+      height: 160px;
+      background-color: rgb(255, 0, 45);
+      transform: rotate(-45deg);
+      margin: 200px;
+      border-radius:2px;
+      position: absolute;
+      top: 90px;
+      filter: blur(30px);
+    }
+    
+    .inheart::before,
+    .inheart::after {
+      content: "";
+      width: 160px;
+      height: 160px;
+      background-color: rgb(255, 0, 45);
+      border-radius: 50%;
+      position: absolute;
+    }
+    
+    .inheart::before {
+      top: -80px;
+      left: 0;
+    }
+    
+    .inheart::after {
+      top: 0;
+      left: 80px;
+    }
+    </style></div>
+    <style>
+      @media (max-width:1024px) {
+      
+      .heart {
+    
+      width: 180px;
+      height: 180px;
+      position:relative;
+      background-color: rgb(243, 18, 72);
+      transform: rotate(-45deg);
+      margin: 200px;
+      border-radius:2px;
+      position: absolute;
+      top: 40px;
+      filter: blur(15px);
+      }
+    
+      .heart::before,
+      .heart::after {
+      content: "";
+      width: 180px;
+      height: 180px;
+      background-color: rgb(243, 18, 72);
+      border-radius: 50%;
+      position: absolute;
+      }
+    
+      .heart::before {
+      top: -90px;
+      left: 0;
+      }
+    
+      .heart::after {
+      top: 0;
+      left: 90px;
+      }
+      
+      }
+    </style>
+  </div>
+</body>
+</html>
